@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon -->
+
+    <title>Photography - Image Workshop </title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- link para os Glyphicons do Font Awesome -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+    <!-- Insere a Fonts do Google Raleway e Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- link do CSS customizado do meu projeto -->
+    <link href="css/style.css" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link href='https://css.gg/arrow-up-o.css' rel='stylesheet'>
+    <!-- para usar
+      font-family: 'Raleway', sans-serif;
+      font-family: 'Source Sans Pro', sans-serif;
+
+    -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+   
+    <header class="header">
+      
+      <div class="header-overlay"><!-- usarei como filtro para aplicar efeito de transparencia -->
+        <div class="header-main"> <!-- menu das opções -->
+          <div class="col-sm-4">
+
+            <ul>
+            <a onclick="ScrollSectionHome()">Home</a>
+            <a onclick="ScrollSectionWork()">Our work</a>
+            <a onclick="ScrollSectionContact()">Contact</a>
+            <a onclick="ScrollSectionMenbers()">Members</a>
+            </ul> <!-- menu com funções de scroll -->
+          </div>
+          <div class="col-sm-4">
+            <div class="text-main"> <!-- nome de empresa ou logo -->
+            <h2>Image Workshop</h2>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <ul class="social-icons"><!-- icons de redesocial -->
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-youtube-play"></a>
+            </ul>
+          </div>
+        </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-12 screen-main">
+
+                      <div class="header-text">
+                          <!-- Título e descrição -->
+                          <h1>Welcome to the Image Workshop</h1>
+                          <p>We are a photography company.</p>  
+                      </div>
+                      <div class="header-btns">
+                        <!-- botões da capa -->
+                        <a class="btn btn-download" id="button" onclick="ScrollSection()">To Explore</a>
+
+                    </div>    
+                  </div>
+
+                
+              </div><!-- row segunda do container -->
+
+
+            
+          </div>
+        
+      </div>
+
+    </header>
+
+    <section id="section1">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="title-section"> <!-- titulo da sessao -->
+            <h1>About</h1>
+            </div>
+            <div class="des-section"> <!-- descrição da sessao -->
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat pretium felis sed sollicitudin. Proin eu turpis id erat dapibus venenatis. Donec lacus nulla, pellentesque vitae pulvinar quis, congue quis erat. Suspendisse congue tortor non imperdiet facilisis. Morbi sit amet mi eget diam dignissim tincidunt eu quis odio. Duis varius mollis magna a interdum. Suspendisse eget eros ultrices, posuere libero ac, lacinia quam. Fusce blandit diam et lorem posuere sollicitudin. Aenean volutpat ornare ligula, eget molestie quam pulvinar eget. Duis id finibus ante, consectetur gravida quam. Vivamus ac ultrices sapien. Nunc non tincidunt nunc. Sed id augue at ex accumsan blandit.</p>
+            </div>
+        </div>  
+
+        <div class="section-img-main">
+          <div class="col-sm-6" style="padding-right: 0%; display: inline-block;" > <!-- bloco de imagens -->
+            <div class="img-section"> 
+              <img src="images/foto.jpg" alt="">            
+            </div>
+          </div>
+          <div class="col-sm-6" style="padding-left: 1px;">
+            <div class="img-section2">
+              <img src="images/crekeaires3.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-sm-6" style="padding-left: 1px;">
+            <div class="img-section3">
+              <img src="images/crekeaires3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+
+        
+      </div>
+    </div>
+
+
+    </section>
+
+    <section id="sectionMenbers">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-section" style="padding-bottom: 20px; padding-top: 30px;">
+              <h1>members</h1>
+            </div>
+          </div>
+        </div>  
+      </div> 
+
+    </section>
+
+    <section class="testimonial" id="section2">
+
+     
+    <div class="testimonial-overlay"> <!-- usarei como filtro para aplicar efeito de transparencia -->
+
+        <div class="container">
+
+            <div class="row">
+                
+                <div class="col-md-12">
+                    
+                    <!-- bloco de efeito carrousel de testemunhos -->
+                    <div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicadores de pagina-->
+                         <ol class="carousel-indicators">
+                            <li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-testimonial" data-slide-to="1"></li>
+                            <li data-target="#carousel-testimonial" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper para os slides --> 
+                        <!-- OBS: TEM QUE A MESMA QUANTIDADE DE ITENS ABAIXO
+                                PARA A MESMA QUANTIDADE DE INDICADORES
+                        -->
+                        <div class="carousel-inner">
+                            
+                            <!-- item 01 -->
+                            <div class="item active text-center">
+                                
+                                <img src="images/crekeaires-perfil.jpg" alt="testemonial" class="center-block">
+                                <div class="testemonial-caption">
+                                    
+                                        <h2>Crekeaires</h2>
+                                        <h4><span>Sr. Photography,</span> Image Workshop</h4>
+                                        <p>
+                                            Maecenas vehicula lacus non odio maximus, non cursus dolor pharetra. In mattis orci nisl, eu iaculis mauris vestibulum vel. Nulla non dictum nibh. 
+                                        </p>
+
+                                </div>
+                            </div><!-- item 01 -->    
+
+                            <!-- item 02 -->
+                            <div class="item text-center">
+                                
+                                <img src="images/Walter.jpg" alt="testemonial" class="center-block">
+                                <div class="testemonial-caption">
+                                    
+                                        <h2>Walter Firmo</h2>
+                                        <h4><span>Manager,</span>Image Workshop</h4>
+                                        <p>
+                                            Maecenas vehicula lacus non odio maximus, non cursus dolor pharetra. In mattis orci nisl, eu iaculis mauris vestibulum vel. Nulla non dictum nibh. 
+                                        </p>
+
+                                </div>
+                            </div><!-- item 02 -->
+                            
+                            <!-- item 03 -->
+                            <div class="item text-center">
+                                
+                                <img src="images/Annie.jpg" alt="testemonial" class="center-block">
+                                <div class="testemonial-caption">
+                                    
+                                        <h2>Annie Leibovitz</h2>
+                                        <h4><span>President,</span>Image Workshop</h4>
+                                        <p>
+                                            Maecenas vehicula lacus non odio maximus, non cursus dolor pharetra. In mattis orci nisl, eu iaculis mauris vestibulum vel. Nulla non dictum nibh. 
+                                        </p>
+
+                                </div>
+                            </div><!-- item 03 -->
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div> <!-- row -->
+            
+        </div> <!-- container da seção testemunhos -->
+        
+    </div> <!-- testimonial-overlay-->
+
+    </section>
+
+    <section id="section3">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-section" style="padding-bottom: 20px; padding-top: 30px;">
+              <h1>Some work</h1>
+            </div>
+            <div class="work">
+              <div class="col-sm-4" style="padding-left:1px; padding-right: 1px;">
+                <img src="images/work.jpg" alt="">
+              </div>
+              <div class="col-sm-4" style="padding-left:1px; padding-right: 1px;">
+                <img src="images/work2.jpg" alt="">
+              </div>
+              <div class="col-sm-4" style="padding-left:1px; padding-right: 1px;">
+                <img src="images/work3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div> 
+    </section>
+
+    <section id="section4">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-section" style="padding-bottom: 20px; padding-top: 30px;">
+              <h1>get in touch</h1>
+            </div>
+          </div>
+        </div>  
+      </div> 
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="title-contact">
+          <h1>Ready to make the most out of your property?
+            Contact me.</h1>
+            <p>123-456-7890</p>
+            <p>contact@imageworkshop.com</p>
+            <p>500 Terry Francois St.</p>
+            <p>San Francisco, CA 94158</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <form class="form-contact">
+          <div class="row">
+            <div class="title-contact">
+              <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere you like on your page. I’m a great place for you to tell a story and let your users know a little more about you.
+
+                ​This is a great space to write long text about your company and your services. You can use this space to go into a little more detail about your company. Talk about your team and what services you provide.</p>
+              
+            </div>
+            <div class="form-contact2">
+              <div class="col-sm-6">
+                <input type="name" class="form-control" placeholder="Name">
+              </div>
+              <div class="col-sm-6">
+                <input type="Email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div class="form-contact">
+              <input type="phone" class="form-control" placeholder="Phone">
+            </div>
+            <div class="form-contact">
+              <textarea class="form-control" id="exampleFormControlTextarea2" rows="4" placeholder="Type your message here..."></textarea>
+            </div>
+            <div class="button-contact">
+              <a href="#">Submit</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="title-footer">
+              <h3>Company</h3>
+              <a onclick="ScrollSectionWork()"><p>Our work</p></a>
+              <a onclick="ScrollSectionContact()"><p>Contact</p></a>
+              <a onclick="ScrollSectionMenbers()"><p>Members</p></a> 
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="title-footer">
+              <h3>Company</h3>
+              <a onclick="ScrollSectionWork()"><p>Our work</p></a>
+              <a onclick="ScrollSectionContact()"><p>Contact</p></a>
+              <a onclick="ScrollSectionMenbers()"><p>Members</p></a>  
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="title-footer">
+              <h3>Company</h3>
+              <a onclick="ScrollSectionWork()"><p>Our work</p></a>
+              <a onclick="ScrollSectionContact()"><p>Contact</p></a>
+              <a onclick="ScrollSectionMenbers()"><p>Members</p></a>  
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="footer-icons">
+              <ul class="social-icons"><!-- icons de redesocial -->
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube-play"></a>
+              </ul>
+            </div>
+          
+          </div>
+
+          <div class="col-sm-12">
+            <div class="credits-footer">
+              <a href="#"><p>Nice</p></a>
+              <a href="#"><p>Privacy Center</p></a>
+              <a href="#"><p>Privacy policy</p></a>
+              <a href="#"><p>Cookies</p></a>
+              <a href="#"><p>About ads</p></a>
+              <a href="#"><p>© 2020 Image Workshop AB</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+     <script>
+       function ScrollSection(){ //função que enviar para sessão sobre
+        const sec = document.querySelector('#section1').offsetTop;
+        window.scroll({
+          top:sec,
+          behavior:"smooth",
+        }); 
+       
+       }
+
+       function ScrollSectionMenbers(){
+        const secM = document.querySelector('#sectionMenbers').offsetTop;
+        window.scroll({
+          top:secM,
+          behavior:"smooth",
+        });  
+       }
+     
+      function ScrollSectionWork(){
+        const secW = document.querySelector('#section3').offsetTop;
+        window.scroll({
+          top:secW,
+          behavior:"smooth",
+        });  
+       }
+      function ScrollSectionHome(){
+        const secW = document.querySelector('#section').offsetTop;
+        window.scroll({
+          top:secW,
+          behavior:"smooth",
+        });  
+       }
+
+      function ScrollSectionContact(){
+        const secW = document.querySelector('#section4').offsetTop;
+        window.scroll({
+          top:secW,
+          behavior:"smooth",
+        }); 
+       }
+     </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
